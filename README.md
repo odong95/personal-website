@@ -1,2 +1,2 @@
-# personal-website
+# Brianodong.com
 My personal portfolio website.
