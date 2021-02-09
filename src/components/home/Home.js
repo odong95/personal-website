@@ -11,7 +11,7 @@ const Home = () => {
           <p className="text-gray-600 leading-relaxed mb-12">{AppConstants.aboutMe}</p>
           <Link className="bg-blue-300 hover:bg-blue-500 py-3 px-6 uppercase text-lg font-bold text-white rounded-full" to="/">Projects</Link>
         </section>
-        <div class="mb-16 sm:mb-0 mt-8 sm:mt-0 sm:w-3/5 sm:pl-12">
+        <div className="mb-16 sm:mb-0 mt-8 sm:mt-0 sm:w-3/5 sm:pl-12">
           <img src={AppConstants.aboutPic} alt="Brian Odong" />
         </div>
       </main>
