@@ -26,8 +26,8 @@ const NavBar = () => {
           </button>
         </div>
         <nav className={cx({ 'flex': isOpen, 'hidden': !isOpen, 'flex-col flex-grow pb-4 md:pb-0 md:flex md:justify-end md:flex-row': true })}>
-          <Link className="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent hover:bg-gray-600 focus:bg-gray-600 focus:text-white hover:text-white text-gray-200 md:mt-0 focus:outline-none focus:shadow-outline" to="/" >About</Link>
-          <Link className="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent hover:bg-gray-600 focus:bg-gray-600 focus:text-white hover:text-white text-gray-200 md:mt-0 focus:outline-none focus:shadow-outline" to="/projects" >Projects</Link>
+          <Link className="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg hover:bg-gray-600 focus:bg-gray-600 focus:text-white hover:text-white text-gray-200 md:mt-0 focus:outline-none focus:shadow-outline" to="/" >About</Link>
+          <Link className="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg hover:bg-gray-600 focus:bg-gray-600 focus:text-white hover:text-white text-gray-200 md:mt-0 focus:outline-none focus:shadow-outline" to="/projects" >Projects</Link>
           {isOpen && <ContactLogoBar />}
         </nav>
       </div>
