@@ -1,4 +1,4 @@
-# BrianOdong.com
+# brianodong.com
 
 My personal portfolio site built with React and TailwindCSS.
 

@@ -10,6 +10,9 @@ const ContactLogoBar = () => {
       <a href={AppConstants.linkedInUrl} target="_blank" rel="noreferrer" className="w-6 mx-1">
         <i className="uil uil-linkedin"></i>
       </a>
+      <a href={AppConstants.githubUrl} target="_blank" rel="noreferrer" className="w-6 mx-1">
+        <i className="uil uil-github"></i>
+      </a>
       <a href={AppConstants.twitterUrl} target="_blank" rel="noreferrer" className="w-6 mx-1">
         <i className="uil uil-twitter-alt"></i>
       </a>

@@ -3,8 +3,8 @@ import { AppConstants } from 'components/App.constants';
 
 const Home = () => {
   return (
-    <div className="container mx-auto px-8">
-      <main className="flex flex-col-reverse sm:flex-row jusitfy-between items-center py-12">
+    <main className="flex-1 overflow-y-auto container mx-auto px-8">
+      <div className="flex flex-col-reverse sm:flex-row jusitfy-between items-center py-12">
         <section className="sm:w-2/5 flex flex-col items-center sm:items-start text-center sm:text-left">
           <h1 className="uppercase text-6xl text-gray-700 font-bold leading-none tracking-wide mb-2">Brian</h1>
           <h2 className="uppercase text-4xl text-yellow-600 text-secondary tracking-widest mb-6">Odong</h2>
@@ -14,8 +14,8 @@ const Home = () => {
         <div className="mb-16 sm:mb-0 mt-8 sm:mt-0 sm:w-3/5 sm:pl-12">
           <img src={AppConstants.aboutPic} alt="Brian Odong" />
         </div>
-      </main>
-    </div>
+      </div>
+    </main>
   )
 }
 
