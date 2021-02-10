@@ -12,7 +12,7 @@ const NotFound = () => <h2 className="container mx-auto text-4xl text-gray-700 t
 const AppRouter = () => {
   return (
     <Router>
-      <div className="flex flex-col h-screen">
+      <div>
         <NavBar />
         <Switch>
           <Route exact path="/">
