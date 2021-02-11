@@ -5,6 +5,7 @@ import {
 } from "react-router-dom";
 import { Home } from 'components/home/Home';
 import { Projects } from 'components/projects/Projects';
+import { Contact } from 'components/contact/Contact';
 import { NavBar } from 'components/navigation/NavBar';
 import { Footer } from 'components/common/footer/Footer';
 const NotFound = () => <h2 className="container mx-auto text-4xl text-gray-700 text-secondary tracking-widest m-6" >Page not found (404)</h2>
@@ -20,6 +21,9 @@ const AppRouter = () => {
           </Route>
           <Route path="/projects">
             <Projects />
+          </Route>
+          <Route path="/contact">
+            <Contact />
           </Route>
           <Route path="*">
             <NotFound />
