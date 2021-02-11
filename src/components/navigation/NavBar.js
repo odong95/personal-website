@@ -7,15 +7,16 @@ const NavBar = () => {
 
   useEffect(() => {
     const handleMenuPopupClick = (e) => {
-      if (!document.getElementById('menu-popup').contains(e.target)) {
-        handleOnOpen();
+      if (isOpen && !document.getElementById('menu-popup').contains(e.target)
+        || isOpen && document.getElementById('hover-links').contains(e.target)) {
+        setIsOpen(false);
       }
     }
-    //window.addEventListener("click", handleMenuPopupClick);
+    window.addEventListener("click", handleMenuPopupClick);
     return () => {
-      // window.removeEventListener('click', handleMenuPopupClick);
+      window.removeEventListener('click', handleMenuPopupClick);
     };
-  }, []);
+  }, [isOpen]);
 
   const handleOnOpen = () => {
     setIsOpen(!isOpen);
@@ -52,13 +53,20 @@ const NavBar = () => {
               }
             </svg>
           </button>
-          {isOpen && <div className="absolute top-10 left-0 right-0 z-50 flex flex-col p-2 pb-4 m-2 space-y-3 bg-gray-700 text-gray-200 rounded shadow">
-            <Link className="px-4 py-2 mt-2 text-sm font-semibold rounded-lg hover:bg-gray-600 focus:bg-gray-600 focus:text-white hover:text-white  
+          {
+            isOpen &&
+            <div id="hover-links" className="absolute top-10 left-0 right-0 z-50 flex flex-col p-2 pb-4 m-2 space-y-3 bg-gray-700 text-gray-200 rounded shadow">
+                <Link className="px-4 py-2 mt-2 text-sm font-semibold rounded-lg hover:bg-gray-600 focus:bg-gray-600 focus:text-white hover:text-white  
             md:mt-0 focus:outline-none focus:shadow-outline" to="/">Home</Link>
-            <Link className="px-4 py-2 mt-2 text-sm font-semibold rounded-lg hover:bg-gray-600 focus:bg-gray-600 focus:text-white hover:text-white  
+                <Link className="px-4 py-2 mt-2 text-sm font-semibold rounded-lg hover:bg-gray-600 focus:bg-gray-600 focus:text-white hover:text-white  
             md:mt-0 focus:outline-none focus:shadow-outline" to="/projects">Projects</Link>
-            <ContactLogoBar />
-          </div>}
+                <a className="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg hover:bg-gray-600 focus:bg-gray-600 focus:text-white 
+            hover:text-white text-gray-200 md:mt-0 focus:outline-none focus:shadow-outline" href="/brian_odong_resume.pdf" target="_blank" rel="noreferrer" >Resume</a>
+                <Link className="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg hover:bg-gray-600 focus:bg-gray-600 focus:text-white 
+            hover:text-white text-gray-200 md:mt-0 focus:outline-none focus:shadow-outline" to="/contact" >Contact</Link>
+              <ContactLogoBar />
+            </div>
+          }
         </div>
       </div>
     </header>

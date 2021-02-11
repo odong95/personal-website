@@ -3,9 +3,10 @@
     "title": "Personal Website",
     "url": "https://brianodong.com",
     "img": "/assets/img/personal-website.webp",
-    "description": "My personal portfolio website.",
+    "description": "My personal website.",
     "technologies": [
       "React",
+      "JavaScript",
       "TailwindCSS",
       "TravisCI"
     ],
@@ -13,10 +14,10 @@
     "repoTool" : "GitHub"
   },
   {
-    "title": "Nutriscope",
+    "title": "NutriScope",
     "url": "https://github.com/odong95/NutriScope",
     "img": "/assets/img/nutriscope.webp",
-    "description": "Nutriscope is an open source Android application that tracks daily nutrition intake.",
+    "description": "NutriScope is an open source Android application that tracks daily nutrition intake.",
     "technologies": [
       "Java",
       "Android",
