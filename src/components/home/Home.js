@@ -4,7 +4,7 @@ import { AppConstants } from 'components/App.constants';
 const Home = () => {
   return (
     <main className="container m-auto px-8 justify-center items-center">
-      <div className="flex flex-col-reverse sm:flex-row justify-between text-center py-12 ">
+      <div className="flex flex-col-reverse sm:flex-row justify-between text-center py-16 ">
         <section className="sm:w-2/5 flex flex-col sm:items-start sm:text-left">
           <h1 className="uppercase text-6xl text-gray-700 font-bold leading-none tracking-wide mb-2">Brian</h1>
           <h2 className="uppercase text-4xl text-yellow-600 text-secondary tracking-widest mb-6">Odong</h2>

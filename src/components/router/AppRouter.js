@@ -7,8 +7,9 @@ import { Home } from 'components/home/Home';
 import { Projects } from 'components/projects/Projects';
 import { Contact } from 'components/contact/Contact';
 import { NavBar } from 'components/navigation/NavBar';
+import { Heading } from 'components/common/heading/Heading';
 import { Footer } from 'components/common/footer/Footer';
-const NotFound = () => <h2 className="container mx-auto text-4xl text-gray-700 text-secondary tracking-widest m-6" >Page not found (404)</h2>
+const NotFound = () => <Heading title="Page not found (404)" />
 
 const AppRouter = () => {
   return (
