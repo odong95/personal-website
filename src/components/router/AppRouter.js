@@ -11,29 +11,28 @@ import { Heading } from 'components/common/heading/Heading';
 import { Footer } from 'components/common/footer/Footer';
 const NotFound = () => <Heading title="Page not found (404)" />
 
-const AppRouter = () => {
-  return (
-    <Router>
-      <div>
-        <NavBar />
-        <Switch>
-          <Route exact path="/">
-            <Home />
-          </Route>
-          <Route path="/projects">
-            <Projects />
-          </Route>
-          <Route path="/contact">
-            <Contact />
-          </Route>
-          <Route path="*">
-            <NotFound />
-          </Route>
-        </Switch>
-        <Footer />
-      </div>
-    </Router>
-  )
-}
+const AppRouter = () => (
+  <Router>
+    <div>
+      <NavBar />
+      <Switch>
+        <Route exact path="/">
+          <Home />
+        </Route>
+        <Route path="/projects">
+          <Projects />
+        </Route>
+        <Route path="/contact">
+          <Contact />
+        </Route>
+        <Route path="*">
+          <NotFound />
+        </Route>
+      </Switch>
+      <Footer />
+    </div>
+  </Router>
+)
+
 
 export { AppRouter }
