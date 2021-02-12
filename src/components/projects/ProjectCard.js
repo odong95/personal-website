@@ -1,6 +1,6 @@
 const ProjectCard = ({ data }) => (
   <div className="w-full mb-4">
-    <div className="bg-white rounded-lg shadow-lg relative">
+    <div className="bg-gray-50 rounded-lg shadow-lg relative">
       <img className="h-48 w-full object-contain " src={data?.img} alt="Project" />
       <div className="p-4 h-auto md:h-48 lg:h-56">
         <div className="flex justify-between items-baseline">
@@ -14,7 +14,7 @@ const ProjectCard = ({ data }) => (
         <div className="text-gray-600 text-sm md:text-xs leading-relaxed ">
           {data?.description}
         </div>
-        <div className="flex flex-wrap mt-3">
+        <div className="flex flex-wrap mt-1">
           {
             data?.technologies.map((value, index) => <span key={index} className=" bg-gray-300 py-1 px-2 mx-1 my-1 rounded-full text-xs text-gray-700">{value}</span>)
           }

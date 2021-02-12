@@ -32,7 +32,7 @@ const ContactForm = () => {
               <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2">
                 Full Name
               </label>
-              <input id="name" type="text" name="name" className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" required />
+              <input id="name" type="text" name="name" className="appearance-none block w-full bg-gray-300 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" required />
               <ValidationError field="name" errors={state.errors} />
             </div>
           </div>
@@ -41,7 +41,7 @@ const ContactForm = () => {
               <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2">
                 E-mail
               </label>
-              <input id="email" type="email" name="_replyto" className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" required />
+              <input id="email" type="email" name="_replyto" className="appearance-none block w-full bg-gray-300 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" required />
               <ValidationError field="email" errors={state.errors} />
             </div>
           </div>
@@ -50,7 +50,7 @@ const ContactForm = () => {
               <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2">
                 Message
               </label>
-              <textarea id="message" type="text" name="message" className="autoexpand trackingwide appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 h-48" required />
+              <textarea id="message" type="text" name="message" className="autoexpand trackingwide appearance-none block w-full bg-gray-300 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 h-48" required />
               <ValidationError field="message" errors={state.errors} />
             </div>
           </div>

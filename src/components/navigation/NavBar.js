@@ -23,13 +23,13 @@ const NavBar = () => {
   }
 
   return (
-    <header className="fixed sm:relative md:relative z-30 w-full px-2 py-2 sm:px-4 text-gray-200 bg-gray-800">
+    <header className="fixed sm:relative z-30 w-full px-2 py-2 sm:px-4 bg-yellow-700">
       <div className="container flex items-center justify-between mx-auto">
-        <div className="p-2 flex items-center">
+        <div className="p-2">
           <Link to="/" className="text-lg font-semibold tracking-widest text-white uppercase rounded-lg focus:outline-none focus:shadow-outline">Brian Odong</Link>
         </div>
-        <div className="flex items-center space-x-1">
-          <nav className="hidden space-x-1 md:inline-flex">
+        <div>
+          <nav className="hidden md:inline-flex">
             <Link className="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg hover:bg-gray-600 focus:bg-gray-600 focus:text-white 
             hover:text-white text-gray-200 md:mt-0 focus:outline-none focus:shadow-outline" to="/" >Home</Link>
             <Link className="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg hover:bg-gray-600 focus:bg-gray-600 focus:text-white 
@@ -55,14 +55,14 @@ const NavBar = () => {
           </button>
           {
             isOpen &&
-            <div id="hover-links" className="absolute top-10 left-0 right-0 z-50 flex flex-col p-2 pb-4 m-2 space-y-3 bg-gray-700 text-gray-200 rounded shadow">
-                <Link className="px-4 py-2 mt-2 text-sm font-semibold rounded-lg hover:bg-gray-600 focus:bg-gray-600 focus:text-white hover:text-white  
+            <div id="hover-links" className="absolute top-10 left-0 right-0 z-50 flex flex-col p-2 pb-4 m-2 space-y-3 bg-gray-600 text-gray-200 rounded shadow">
+                <Link className="px-4 py-2 mt-2 text-sm font-semibold rounded-lg hover:bg-gray-500 focus:bg-gray-600 focus:text-white hover:text-white  
             md:mt-0 focus:outline-none focus:shadow-outline" to="/">Home</Link>
-                <Link className="px-4 py-2 mt-2 text-sm font-semibold rounded-lg hover:bg-gray-600 focus:bg-gray-600 focus:text-white hover:text-white  
+                <Link className="px-4 py-2 mt-2 text-sm font-semibold rounded-lg hover:bg-gray-500 focus:bg-gray-600 focus:text-white hover:text-white  
             md:mt-0 focus:outline-none focus:shadow-outline" to="/projects">Projects</Link>
-                <a className="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg hover:bg-gray-600 focus:bg-gray-600 focus:text-white 
+                <a className="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg hover:bg-gray-500 focus:bg-gray-600 focus:text-white 
             hover:text-white text-gray-200 md:mt-0 focus:outline-none focus:shadow-outline" href="/brian_odong_resume.pdf" target="_blank" rel="noreferrer" >Resume</a>
-                <Link className="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg hover:bg-gray-600 focus:bg-gray-600 focus:text-white 
+                <Link className="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg hover:bg-gray-500 focus:bg-gray-600 focus:text-white 
             hover:text-white text-gray-200 md:mt-0 focus:outline-none focus:shadow-outline" to="/contact" >Contact</Link>
               <ContactLogoBar />
             </div>
