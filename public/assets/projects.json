@@ -41,7 +41,7 @@
   {
     "title": "Air Traffic Control Simulator",
     "url": "https://github.com/odong95/air-traffic-control-simulator",
-    "img": "/assets/img/atcs.avif",
+    "img": "/assets/img/atcs.webp",
     "description": "A flight simulator that creates and monitors air traffic within the U.S airspace.",
     "technologies": [
       "Java",
