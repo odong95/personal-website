@@ -1,11 +1,12 @@
 import React from 'react'
+import { Link } from "react-router-dom";
 import { AppConstants } from 'components/App.constants';
 
 const ContactLogoBar = () => (
   <div className="flex-row  md:flex-row text-2xl">
-    <a href={AppConstants.mailUrl} target="_blank" rel="noreferrer" className="w-6 mx-1">
+    <Link to="/contact" className="w-6 mx-1">
       <i className="uil uil-envelope hover:bg-gray-500 hover:text-white"></i>
-    </a>
+    </Link>
     <a href={AppConstants.linkedInUrl} target="_blank" rel="noreferrer" className="w-6 mx-1">
       <i className="uil uil-linkedin hover:bg-gray-500 hover:text-white"></i>
     </a>

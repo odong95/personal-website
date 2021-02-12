@@ -7,8 +7,7 @@
     "technologies": [
       "React",
       "JavaScript",
-      "TailwindCSS",
-      "TravisCI"
+      "TailwindCSS"
     ],
     "repository": "https://github.com/odong95/personal-website",
     "repoTool" : "GitHub"
@@ -37,6 +36,18 @@
       "Azure"
     ],
     "repository": "https://github.com/odong95/wasp-messenger",
+    "repoTool" : "GitHub"
+  },
+  {
+    "title": "Air Traffic Control Simulator",
+    "url": "https://github.com/odong95/air-traffic-control-simulator",
+    "img": "/assets/img/atcs.avif",
+    "description": "A flight simulator that creates and monitors air traffic within the U.S airspace.",
+    "technologies": [
+      "Java",
+      "Swing API"
+    ],
+    "repository": "https://github.com/odong95/air-traffic-control-simulator",
     "repoTool" : "GitHub"
   }
 ]
