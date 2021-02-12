@@ -7,7 +7,7 @@ const ProjectCard = ({ data }) => (
           <a href={data?.url} target="_blank" rel="noreferrer" className="block text-blue-500 hover:text-blue-600 font-semibold mb-2 text-lg ">
             {data?.title}
           </a>
-          <a href={data?.repository} target="_blank" rel="noreferrer" className="border-solid border-2 border-gray-200 text-gray-500 hover:text-gray-100 hover:bg-gray-500 font-semibold mb-2 text-sm ">
+          <a href={data?.repository} target="_blank" rel="noreferrer" className=" text-gray-700 hover:text-gray-100 hover:bg-gray-500 font-semibold mb-2 text-sm ">
             {data?.repoTool}
           </a>
         </div>

@@ -7,18 +7,16 @@
     "@craco/craco": "^6.0.0",
     "@formspree/react": "^2.2.3",
     "@tailwindcss/postcss7-compat": "^2.0.2",
-    "@testing-library/jest-dom": "^5.11.9",
-    "@testing-library/react": "^11.2.3",
-    "@testing-library/user-event": "^12.6.0",
     "autoprefixer": "^9.8.6",
-    "classnames": "^2.2.6",
     "postcss": "^7.0.35",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-hot-toast": "^1.0.2",
     "react-router": "^5.2.0",
     "react-router-dom": "^5.2.0",
+    "react-router-scroll-top": "^0.2.1",
     "react-scripts": "4.0.1",
+    "react-scroll-up-button": "^1.6.4",
     "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.0.2"
   },
   "scripts": {
@@ -26,12 +24,6 @@
     "build": "craco build",
     "test": "craco test",
     "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
   },
   "browserslist": {
     "production": [

@@ -3,17 +3,19 @@ import {
   Switch,
   Route
 } from "react-router-dom";
+import ScrollToTop from 'react-router-scroll-top';
 import { Home } from 'components/home/Home';
 import { Projects } from 'components/projects/Projects';
 import { Contact } from 'components/contact/Contact';
 import { NavBar } from 'components/navigation/NavBar';
 import { Heading } from 'components/common/heading/Heading';
 import { Footer } from 'components/common/footer/Footer';
+
 const NotFound = () => <Heading title="Page not found (404)" />
 
 const AppRouter = () => (
   <Router>
-    <div>
+    <ScrollToTop>
       <NavBar />
       <Switch>
         <Route exact path="/">
@@ -30,7 +32,7 @@ const AppRouter = () => (
         </Route>
       </Switch>
       <Footer />
-    </div>
+    </ScrollToTop>
   </Router>
 )
 

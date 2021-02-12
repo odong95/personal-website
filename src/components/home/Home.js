@@ -8,7 +8,7 @@ const Home = () => (
         <h1 className="uppercase text-6xl text-gray-700 font-bold leading-none tracking-wide mb-2">Brian</h1>
         <h2 className="uppercase text-4xl text-yellow-600 text-secondary tracking-widest mb-6">Odong</h2>
         <p className="text-gray-600 leading-relaxed mb-12">{AppConstants.aboutMe}</p>
-        <Link className="bg-blue-400 hover:bg-blue-500 py-3 px-6 uppercase text-lg font-bold text-white rounded-full" to="/projects">
+        <Link className="bg-blue-400 hover:bg-blue-500 py-3 px-6 uppercase text-lg font-bold text-gray-100 rounded-full" to="/projects">
           Projects <span>&#x25B6;</span>
         </Link>
       </section>
