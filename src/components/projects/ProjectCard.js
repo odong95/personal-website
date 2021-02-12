@@ -1,8 +1,8 @@
 const ProjectCard = ({ data }) => (
-  <div className="w-full lg:w-1/3 md:w-1/2 mx-2 mb-4">
-    <div className="bg-white rounded-lg  shadow-lg relative">
+  <div className="w-full mb-4">
+    <div className="bg-white rounded-lg shadow-lg relative">
       <img className="h-48 w-full object-contain " src={data?.img} alt="Project" />
-      <div className="p-4 h-auto md:h-48 lg:h-48">
+      <div className="p-4 h-auto md:h-48 lg:h-56">
         <div className="flex justify-between items-baseline">
           <a href={data?.url} target="_blank" rel="noreferrer" className="block text-blue-500 hover:text-blue-600 font-semibold mb-2 text-lg ">
             {data?.title}

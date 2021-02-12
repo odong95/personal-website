@@ -7,8 +7,8 @@ const NavBar = () => {
 
   useEffect(() => {
     const handleMenuPopupClick = (e) => {
-      if ((isOpen && !document.getElementById('menu-popup').contains(e.target))
-        || (isOpen && document.getElementById('hover-links').contains(e.target))) {
+      if ((isOpen && !document.getElementById('menu-popup')?.contains(e.target))
+        || (isOpen && document.getElementById('hover-links')?.contains(e.target))) {
         setIsOpen(false);
       }
     }

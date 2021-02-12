@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { AppConstants } from 'components/App.constants';
 
 const ContactLogoBar = () => (
-  <div className="flex-row  md:flex-row text-2xl">
+  <div className="flex-row md:flex-row text-lg md:text-2xl">
     <Link to="/contact" className="w-6 mx-1">
       <i className="uil uil-envelope hover:bg-gray-500 hover:text-white"></i>
     </Link>

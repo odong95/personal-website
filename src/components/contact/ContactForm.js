@@ -24,7 +24,7 @@ const ContactForm = () => {
   }, [state.succeeded])
 
   return (
-    <>
+    <div className="flex justify-center">
       <form id="form" onSubmit={handleSubmit} className="w-full max-w-lg">
         <fieldset>
           <div className="flex flex-wrap -mx-3 mb-6">
@@ -64,7 +64,7 @@ const ContactForm = () => {
         </fieldset>
       </form>
       <Toaster />
-    </>
+    </div>
   )
 }
 

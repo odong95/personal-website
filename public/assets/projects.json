@@ -3,7 +3,7 @@
     "title": "Personal Website",
     "url": "https://brianodong.com",
     "img": "/assets/img/personal-website.webp",
-    "description": "My personal website.",
+    "description": "My personal website built with a responsive design.",
     "technologies": [
       "React",
       "JavaScript",
