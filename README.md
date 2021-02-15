@@ -27,5 +27,5 @@ It correctly bundles React in production mode and optimizes the build for the be
 
 ## Docker
 
-`docker build -t odong95/personal-website .` - Creates a docker image
-`docker run -it --rm -p 8080:80 odong95/personal-website` - Runs container on http://localhost:8080
+`docker build -t personal-website .` - Creates a docker image\
+`docker run -it --rm -p 8080:80 personal-website` - Runs container on http://localhost:8080
