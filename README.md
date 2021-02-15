@@ -23,3 +23,9 @@ See the section about [running tests](https://facebook.github.io/create-react-ap
 
 Builds the app for production to the `build` folder.\
 It correctly bundles React in production mode and optimizes the build for the best performance.
+
+
+## Docker
+
+`docker build -t odong95/personal-website .` - Creates a docker image
+`docker run -it --rm -p 8080:80 odong95/personal-website` - Runs container on http://localhost:8080

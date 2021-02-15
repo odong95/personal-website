@@ -1,5 +1,4 @@
 export const AppConstants = {
-  mailUrl: "mailto:odong951@gmail.com",
   linkedInUrl: "https://www.linkedin.com/in/brian-odong",
   facebookUrl: "https://www.facebook.com/brianodong95",
   twitterUrl: "https://twitter.com/skydxnce",
