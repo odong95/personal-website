@@ -17,7 +17,7 @@
     "title": "NutriScope",
     "url": "https://github.com/odong95/NutriScope",
     "img": "/assets/img/nutriscope.webp",
-    "description": "NutriScope is an open source Android application that tracks daily nutrition intake.",
+    "description": "NutriScope is an open source Android application that tracks daily nutritional intake.",
     "technologies": [
       "Java",
       "Android",
