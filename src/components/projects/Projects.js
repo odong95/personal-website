@@ -1,11 +1,9 @@
 import { ProjectCard } from 'components/projects/ProjectCard';
 import { Heading } from 'components/common/heading/Heading';
-import { useCachedFetch } from 'utils/useCachedFetch';
 import ScrollUpButton from 'react-scroll-up-button';
+import projects from './projects.json';
 
 const Projects = () => {
-  const projects = useCachedFetch('/assets/projects.json');
-
   return (
     <main className="container mx-auto px-8 py-4">
       <div className="mt-12">

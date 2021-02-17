@@ -1,9 +1,6 @@
-import { AppRouter } from 'components/router/AppRouter'
-import { useCachedFetch } from 'utils/useCachedFetch';
+import { AppRouter } from 'components/router/AppRouter';
 
 function App() {
-  useCachedFetch('/assets/projects.json');
-  
   return (
     <div className="App">
       <AppRouter />
