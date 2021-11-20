@@ -1,29 +1,28 @@
 import React from 'react'
 import { Link } from "react-router-dom";
 import { AppConstants } from 'components/App.constants';
+import { MdOutlineEmail } from 'react-icons/md'
+import { SiLinkedin, SiGithub, SiTwitter, SiLetterboxd } from 'react-icons/si';
 
 const ContactLogoBar = () => (
   <div className="flex-row md:flex-row text-3xl md:text-2xl">
-    <Link to="/contact" className="w-6 mx-1">
-      <i className="uil uil-envelope hover:bg-gray-500 hover:text-white" aria-label="mail"></i>
+    <Link to="/contact" className="w-6 mx-2 inline-block">
+      <MdOutlineEmail />
     </Link>
-    <a href={AppConstants.linkedInUrl} target="_blank" rel="noreferrer" className="w-6 mx-1">
-      <i className="uil uil-linkedin hover:bg-gray-500 hover:text-white" aria-label="linkedin"></i>
+    <a href={AppConstants.linkedInUrl} target="_blank" rel="noreferrer" className="w-6 mx-2 inline-block">
+      <SiLinkedin />
     </a>
-    <a href={AppConstants.githubUrl} target="_blank" rel="noreferrer" className="w-6 mx-1">
-      <i className="uil uil-github hover:bg-gray-500 hover:text-white" aria-label="github"></i>
+    <a href={AppConstants.githubUrl} target="_blank" rel="noreferrer" className="w-6 mx-2 inline-block">
+      <SiGithub />
     </a>
-    <a href={AppConstants.twitterUrl} target="_blank" rel="noreferrer" className="w-6 mx-1">
-      <i className="uil uil-twitter-alt hover:bg-gray-500 hover:text-white" aria-label="twitter"></i>
+    <a href={AppConstants.twitterUrl} target="_blank" rel="noreferrer" className="w-6 mx-2 inline-block">
+      <SiTwitter />
     </a>
-    <a href={AppConstants.facebookUrl} target="_blank" rel="noreferrer" className="w-6 mx-1">
-      <i className="uil uil-facebook-f hover:bg-gray-500 hover:text-white" aria-label="facebook"></i>
+    <a href={AppConstants.letterboxdUrl} target="_blank" rel="noreferrer" className="w-6 mx-2 inline-block">
+      <SiLetterboxd />
     </a>
   </div>
 )
-
-
-
 
 export { ContactLogoBar };
 

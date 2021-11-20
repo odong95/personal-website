@@ -1,9 +1,37 @@
 [
   {
+    "title": "vinyler",
+    "url": "https://github.com/odong95/vinyler",
+    "img": "/assets/img/vinyler.webp",
+    "description": "Vinyler tracks collections and daily listening activity of vinyl records. (Currently in progress)",
+    "technologies": [
+      "Python",
+      "Django",
+      "React",
+      "TypeScript"
+    ],
+    "repository": "https://github.com/odong95/vinyler",
+    "repoTool": "GitHub"
+  },
+  {
+    "title": "discoette",
+    "url": "https://github.com/odong95/discoette",
+    "img": "/assets/img/discoette.webp",
+    "description": "Discoette is an open source application that tracks and notifies users of new music releases. (Currently in progress)",
+    "technologies": [
+      "Next.js",
+      "TypeScript",
+      "Postgres",
+      "Vercel"
+    ],
+    "repository": "https://github.com/odong95/discoette",
+    "repoTool": "GitHub"
+  },
+  {
     "title": "Personal Website",
     "url": "https://brianodong.com",
     "img": "/assets/img/personal-website.webp",
-    "description": "My personal website built with a responsive design.",
+    "description": "My personal portfolio website. (Built 2021)",
     "technologies": [
       "React",
       "JavaScript",
@@ -11,44 +39,44 @@
       "Vercel"
     ],
     "repository": "https://github.com/odong95/personal-website",
-    "repoTool" : "GitHub"
+    "repoTool": "GitHub"
   },
   {
     "title": "NutriScope",
     "url": "https://github.com/odong95/NutriScope",
     "img": "/assets/img/nutriscope.webp",
-    "description": "NutriScope is an open source Android application that tracks daily nutritional intake.",
+    "description": "NutriScope is an open source Android application that tracks daily nutritional intake. (Built 2017)",
     "technologies": [
       "Java",
       "Android",
       "Firebase"
     ],
     "repository": "https://github.com/odong95/NutriScope",
-    "repoTool" : "GitHub"
+    "repoTool": "GitHub"
   },
   {
     "title": "Wasp Messenger",
     "url": "https://github.com/odong95/wasp-messenger",
     "img": "/assets/img/wasp-messenger.webp",
-    "description": "Wasp Messenger is a chat application for Android built with end to end encryption and a fluid UI.",
+    "description": "Wasp Messenger is a chat application for Android built with end to end encryption and a responsive UI. (Built 2016)",
     "technologies": [
       "Java",
       "Android",
       "Azure"
     ],
     "repository": "https://github.com/odong95/wasp-messenger",
-    "repoTool" : "GitHub"
+    "repoTool": "GitHub"
   },
   {
     "title": "Air Traffic Control Simulator",
     "url": "https://github.com/odong95/air-traffic-control-simulator",
     "img": "/assets/img/atcs.webp",
-    "description": "A flight simulator that creates and monitors air traffic within the U.S airspace.",
+    "description": "A flight simulator that creates and monitors air traffic within the U.S airspace. (Built 2014)",
     "technologies": [
       "Java",
       "Swing API"
     ],
     "repository": "https://github.com/odong95/air-traffic-control-simulator",
-    "repoTool" : "GitHub"
+    "repoTool": "GitHub"
   }
 ]
