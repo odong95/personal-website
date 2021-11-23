@@ -16,7 +16,7 @@ export const AppConstants = {
       logo: '/assets/img/logos/ti.webp'
     },
     {
-      name: 'Diary.com',
+      name: 'Dairy.com',
       url: 'https://dairy.com',
       logo: '/assets/img/logos/dairy.webp'
     }, {
