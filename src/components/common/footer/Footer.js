@@ -3,11 +3,12 @@ import { ContactLogoBar } from 'components/common/contact-logo-bar/ContactLogoBa
 import { AppConstants } from 'components/App.constants';
 
 const Footer = () => (
-  <div>
+  <div className="bg-tealalt">
     <div className="container flex items-center py-6
-            border-t border-gray-600 text-gray-400 
-              justify-between mx-auto md:flex md:justify-between md:py-2" >
-      <div className="mt-1 text-sm">
+           border-gray-600 text-gray-50 
+            font-light font-lato
+            justify-between mx-auto md:flex md:justify-between md:py-2" >
+      <div className="mt-1 ml-1 text-md">
         <p><strong> {AppConstants.footer} </strong></p>
       </div>
       <ContactLogoBar />

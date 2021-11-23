@@ -5,7 +5,7 @@ import { MdOutlineEmail } from 'react-icons/md'
 import { SiLinkedin, SiGithub, SiTwitter, SiLetterboxd } from 'react-icons/si';
 
 const ContactLogoBar = () => (
-  <div className="flex-row md:flex-row text-3xl md:text-2xl">
+  <div className="flex-row md:flex-row text-3xl md:text-2xl mr-1">
     <Link to="/contact" className="w-6 mx-2 inline-block">
       <MdOutlineEmail />
     </Link>
