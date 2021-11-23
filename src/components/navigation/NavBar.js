@@ -1,9 +1,15 @@
 import { useState, useEffect } from 'react';
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { ContactLogoBar } from 'components/common/contact-logo-bar/ContactLogoBar';
 
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [path, setPath] = useState('');
+  const location = useLocation();
+
+  useEffect(() => {
+    setPath(location.pathname);
+  }, [location]);
 
   useEffect(() => {
     const handleMenuPopupClick = (e) => {
@@ -18,6 +24,7 @@ const NavBar = () => {
     };
   }, [isOpen]);
 
+
   const handleOnOpen = () => {
     setIsOpen(!isOpen);
   }
@@ -30,14 +37,14 @@ const NavBar = () => {
         </div>
         <div>
           <nav className="hidden md:inline-flex text-md">
-            <Link className="px-4 py-2 mt-2 bg-transparent rounded-lg hover:bg-gray-600 focus:bg-gray-600 focus:text-gray-100 
-            hover:text-white text-gray-50 md:mt-0 focus:outline-none focus:shadow-outline" to="/" >Home</Link>
-            <Link className="px-4 py-2 mt-2 bg-transparent rounded-lg hover:bg-gray-600 focus:bg-gray-600 focus:text-gray-100  
-            hover:text-white text-gray-50 md:mt-0 focus:outline-none focus:shadow-outline" to="/projects" >Projects</Link>
-            <a className="px-4 py-2 mt-2 bg-transparent rounded-lg hover:bg-gray-600 focus:bg-gray-600 focus:text-gray-100  
-            hover:text-white text-gray-50 md:mt-0 focus:outline-none focus:shadow-outline" href="/brian_odong_resume.pdf" target="_blank" rel="noreferrer" >Resume</a>
-            <Link className="px-4 py-2 mt-2 bg-transparent rounded-lg hover:bg-gray-600 focus:bg-gray-600 focus:text-gray-100  
-            hover:text-white text-gray-50 md:mt-0 focus:outline-none focus:shadow-outline" to="/contact" >Contact</Link>
+            <Link className={`${path === '/' && 'bg-red-400'} px-4 py-2 mt-2 bg-transparent rounded-lg hover:bg-red-400 focus:text-gray-100 
+            hover:text-white text-gray-50 md:mt-0 focus:outline-none focus:shadow-outline`} to="/" >Home</Link>
+            <Link className={`${path === '/projects' && 'bg-red-400'} px-4 py-2 mt-2 bg-transparent rounded-lg hover:bg-red-400 focus:text-gray-100  
+            hover:text-white text-gray-50 md:mt-0 focus:outline-none focus:shadow-outline`} to="/projects" >Projects</Link>
+            <a className={`px-4 py-2 mt-2 bg-transparent rounded-lg hover:bg-red-400 focus:text-gray-100  
+            hover:text-white text-gray-50 md:mt-0 focus:outline-none focus:shadow-outline`} href="/brian_odong_resume.pdf" target="_blank" rel="noreferrer" >Resume</a>
+            <Link className={`${path === '/contact' && 'bg-red-400'} px-4 py-2 mt-2 bg-transparent rounded-lg hover:bg-red-400 focus:text-gray-100  
+            hover:text-white text-gray-50 md:mt-0 focus:outline-none focus:shadow-outline`} to="/contact" >Contact</Link>
           </nav>
         </div>
         <div id="menu-popup" className="inline-flex md:hidden">
