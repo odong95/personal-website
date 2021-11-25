@@ -1,5 +1,6 @@
 
 import * as cheerio from 'cheerio';
+import { AppConstants } from "components/App.constants";
 
 function isListItem(element) {
   // if the list path is in the url
@@ -264,7 +265,7 @@ function invalidUsername(username) {
 }
 
 function getDiaryData(username) {
-  const uri = `http://localhost:8080/https://letterboxd.com/${username}/rss/`;
+  const uri = `${AppConstants.corsUrl}https://letterboxd.com/${username}/rss/`;
 
   return fetch(uri)
     .then((response) => {
