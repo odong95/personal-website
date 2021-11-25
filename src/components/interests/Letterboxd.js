@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { letterboxd as lb } from "letterboxd";
+import { default as lb } from "letterboxd";
 import { LbEntry } from './LbEntry';
 import { LogoLink } from 'components/common/logo-link/LogoLink';
 import { MdArrowBackIosNew, MdArrowForwardIos } from 'react-icons/md'
