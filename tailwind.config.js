@@ -8,12 +8,23 @@ module.exports = {
           DEFAULT: '#99c7c5'
         },
         tanalt: {
-          DEFAULT: '#eeede8'
+          light: '#beb4b4',
+          DEFAULT: '#eeede8',
+          dark: '#635a4f'
+        },
+        offwhite: {
+          DEFAULT: '#fbfffe'
+        },
+        offgray: {
+          DEFAULT: '#8e8384'
         }
       },
-      fontFamily:{
+      fontFamily: {
         'lato': ['Lato'],
         'josefin': ['Josefin Sans']
+      },
+      width: {
+        '530': '530px'
       }
     }
   },

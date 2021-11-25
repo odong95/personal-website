@@ -36,15 +36,17 @@ const NavBar = () => {
           <Link to="/" className="text-xl tracking-widest text-gray-50 uppercase rounded-lg focus:outline-none focus:shadow-outline">Brian Odong</Link>
         </div>
         <div>
-          <nav className="hidden md:inline-flex text-md">
-            <Link className={`${path === '/' && 'bg-red-400'} px-4 py-2 mt-2 bg-transparent rounded-lg hover:bg-red-400 focus:text-gray-100 
-            hover:text-white text-gray-50 md:mt-0 focus:outline-none focus:shadow-outline`} to="/" >Home</Link>
-            <Link className={`${path === '/projects' && 'bg-red-400'} px-4 py-2 mt-2 bg-transparent rounded-lg hover:bg-red-400 focus:text-gray-100  
-            hover:text-white text-gray-50 md:mt-0 focus:outline-none focus:shadow-outline`} to="/projects" >Projects</Link>
-            <a className={`px-4 py-2 mt-2 bg-transparent rounded-lg hover:bg-red-400 focus:text-gray-100  
-            hover:text-white text-gray-50 md:mt-0 focus:outline-none focus:shadow-outline`} href="/brian_odong_resume.pdf" target="_blank" rel="noreferrer" >Resume</a>
-            <Link className={`${path === '/contact' && 'bg-red-400'} px-4 py-2 mt-2 bg-transparent rounded-lg hover:bg-red-400 focus:text-gray-100  
-            hover:text-white text-gray-50 md:mt-0 focus:outline-none focus:shadow-outline`} to="/contact" >Contact</Link>
+          <nav className="hidden md:inline-flex text-md text-offwhite">
+            <Link className={`${path === '/' && 'bg-tanalt-dark'} px-4 py-2 mt-2 bg-transparent rounded-lg hover:bg-tanalt-dark focus:text-gray-100 
+            hover:text-white md:mt-0 focus:outline-none focus:shadow-outline`} to="/" >Home</Link>
+            <Link className={`${path === '/projects' && 'bg-tanalt-dark'} px-4 py-2 mt-2 bg-transparent rounded-lg hover:bg-tanalt-dark focus:text-gray-100  
+            hover:text-white md:mt-0 focus:outline-none focus:shadow-outline`} to="/projects" >Projects</Link>
+            <Link className={`${path === '/interests' && 'bg-tanalt-dark'} px-4 py-2 mt-2 bg-transparent rounded-lg hover:bg-tanalt-dark focus:text-gray-100  
+            hover:text-white md:mt-0 focus:outline-none focus:shadow-outline`} to="/interests" >Interests</Link>
+            <Link className={`${path === '/resume' && 'bg-tanalt-dark'} px-4 py-2 mt-2 bg-transparent rounded-lg hover:bg-tanalt-dark focus:text-gray-100  
+            hover:text-white md:mt-0 focus:outline-none focus:shadow-outline`} to="/resume" >Resume</Link>
+            <Link className={`${path === '/contact' && 'bg-tanalt-dark'} px-4 py-2 mt-2 bg-transparent rounded-lg hover:bg-tanalt-dark focus:text-gray-100  
+            hover:text-white md:mt-0 focus:outline-none focus:shadow-outline`} to="/contact" >Contact</Link>
           </nav>
         </div>
         <div id="menu-popup" className="inline-flex md:hidden">
@@ -62,15 +64,17 @@ const NavBar = () => {
           </button>
           {
             isOpen &&
-            <div id="hover-links" className="absolute top-10 left-0 right-0 z-50 flex flex-col p-2 pb-4 m-2 space-y-3 bg-gray-600 text-gray-200 text-2xl rounded shadow">
-              <Link className="px-4 py-2 mt-2 rounded-lg hover:bg-gray-500 focus:bg-gray-600 focus:text-gray-100  hover:text-white  
-            md:mt-0 focus:outline-none focus:shadow-outline" to="/">Home</Link>
-              <Link className="px-4 py-2 mt-2 rounded-lg hover:bg-gray-500 focus:bg-gray-600 focus:text-gray-100  hover:text-white  
-            md:mt-0 focus:outline-none focus:shadow-outline" to="/projects">Projects</Link>
-              <a className="px-4 py-2 mt-2 bg-transparent rounded-lg hover:bg-gray-500 focus:bg-gray-600 focus:text-gray-100  
-            hover:text-white text-gray-200 md:mt-0 focus:outline-none focus:shadow-outline" href="/brian_odong_resume.pdf" target="_blank" rel="noreferrer" >Resume</a>
-              <Link className="px-4 py-2 mt-2 bg-transparent rounded-lg hover:bg-gray-500 focus:bg-gray-600 focus:text-gray-100  
-            hover:text-white text-gray-200 md:mt-0 focus:outline-none focus:shadow-outline" to="/contact" >Contact</Link>
+            <div id="hover-links" className="absolute top-10 left-0 right-0 z-50 flex flex-col p-2 pb-4 m-2 space-y-3 bg-tanalt-dark text-gray-200 text-2xl rounded shadow">
+              <Link className={`${path === '/' && 'bg-gray-500'} px-4 py-2 mt-2 rounded-lg hover:bg-gray-500 focus:text-gray-100  hover:text-white  
+            md:mt-0 focus:outline-none focus:shadow-outline`} to="/">Home</Link>
+              <Link className={`${path === '/projects' && 'bg-gray-500'} px-4 py-2 mt-2 rounded-lg hover:bg-gray-500 focus:text-gray-100  hover:text-white  
+            md:mt-0 focus:outline-none focus:shadow-outline`} to="/projects">Projects</Link>
+              <Link className={`${path === '/interests' && 'bg-gray-500'} px-4 py-2 mt-2 rounded-lg hover:bg-gray-500 focus:text-gray-100  hover:text-white  
+            md:mt-0 focus:outline-none focus:shadow-outline`} to="/interests">Interests</Link>
+              <Link className={`${path === '/resume' && 'bg-gray-500'} px-4 py-2 mt-2 rounded-lg hover:bg-gray-500 focus:text-gray-100  hover:text-white  
+            md:mt-0 focus:outline-none focus:shadow-outline`} to="/resume">Resume</Link>
+              <Link className={`${path === '/contact' && 'bg-tanalt-dark'} px-4 py-2 mt-2 bg-transparent rounded-lg hover:bg-gray-500 focus:text-gray-100  
+            hover:text-white text-gray-200 md:mt-0 focus:outline-none focus:shadow-outline`} to="/contact" >Contact</Link>
               <ContactLogoBar />
             </div>
           }

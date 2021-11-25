@@ -6,6 +6,8 @@ import {
 import ScrollToTop from 'react-router-scroll-top';
 import { Home } from 'components/home/Home';
 import { Projects } from 'components/projects/Projects';
+import { Interests } from 'components/interests/Interests';
+import { Resume } from 'components/resume/Resume';
 import { Contact } from 'components/contact/Contact';
 import { NavBar } from 'components/navigation/NavBar';
 import { Heading } from 'components/common/heading/Heading';
@@ -24,6 +26,12 @@ const AppRouter = () => (
         <Route path="/projects">
           <Projects />
         </Route>
+        <Route path="/interests">
+          <Interests />
+        </Route>
+        <Route path="/resume">
+          <Resume />
+        </Route>
         <Route path="/contact">
           <Contact />
         </Route>
@@ -35,6 +43,5 @@ const AppRouter = () => (
     </ScrollToTop>
   </Router>
 )
-
 
 export { AppRouter }

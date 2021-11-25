@@ -3,7 +3,13 @@ export const AppConstants = {
   letterboxdUrl: "https://letterboxd.com/lately",
   twitterUrl: "https://twitter.com/skydxnce",
   githubUrl: "https://github.com/odong95",
+  spotifyPlaylistUrl: 'https://open.spotify.com/playlist/6gcfUnJWZCb3LN0ezLUObI?si=438cf028d2074bd0',
   aboutPic: "/assets/img/about.png",
+  letterboxdLogo: 'assets/img/logos/lb.webp',
+  spotifyLogo: 'assets/img/logos/spotify.webp',
+  resume: "/brian_odong_resume.pdf",
+  formspreeId: 'xpzoeaqg',
+  lbUserName: 'lately',
   companies: [
     {
       name: 'Meta',
@@ -32,5 +38,6 @@ export const AppConstants = {
   aboutMe: "Hi I'm Brian, a software engineer based in the Dallas-Fort Worth area. " +
     "I have passion for using cutting edge technology to create intuitive user experiences and deliver performant web app solutions. " +
     "Check out some of the stuff I'm working on!",
+  interests: "I'm a huge film nerd and love discovering new music. Here is what I've been watching/listening to lately!",
   footer: '© 2022 Brian Odong'
 }
