@@ -30,7 +30,7 @@ const NavBar = () => {
   }
 
   return (
-    <header className="fixed sm:relative z-30 w-full px-2 py-2 sm:px-4 bg-tealalt border-b-2 border-gray-500 font-lato font-semibold">
+    <header className="fixed sm:relative z-30 w-full px-2 py-2 bg-tealalt border-b-2 border-gray-500 font-lato font-semibold">
       <div className="container flex items-center justify-between mx-auto">
         <div className="p-2">
           <Link to="/" className="text-xl tracking-widest text-gray-50 uppercase rounded-lg focus:outline-none focus:shadow-outline">Brian Odong</Link>
