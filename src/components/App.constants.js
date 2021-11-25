@@ -4,7 +4,7 @@ export const AppConstants = {
   twitterUrl: "https://twitter.com/skydxnce",
   githubUrl: "https://github.com/odong95",
   spotifyPlaylistUrl: 'https://open.spotify.com/playlist/6gcfUnJWZCb3LN0ezLUObI?si=438cf028d2074bd0',
-  corsUrl: 'cors-anywhere-odong95.vercel.app/',
+  corsUrl: 'cors-anywhere-two.vercel.app/',
   aboutPic: "/assets/img/about.png",
   letterboxdLogo: 'assets/img/logos/lb.webp',
   spotifyLogo: 'assets/img/logos/spotify.webp',
