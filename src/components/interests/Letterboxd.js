@@ -3,7 +3,8 @@ import { LbEntry } from './LbEntry';
 import { LogoLink } from 'components/common/logo-link/LogoLink';
 import { MdArrowBackIosNew, MdArrowForwardIos } from 'react-icons/md'
 import { AppConstants } from "components/App.constants";
-import { letterboxd as lb } from "./lb";
+//import { letterboxd as lb } from "./lb";
+import { default as lb } from "letterboxd";
 import lscache from 'lscache';
 
 const Letterboxd = () => {
