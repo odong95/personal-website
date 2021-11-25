@@ -1,9 +1,10 @@
 import { useEffect } from 'react';
 import { useForm, ValidationError } from '@formspree/react';
 import toast, { Toaster } from 'react-hot-toast';
+import { AppConstants } from 'components/App.constants';
 
 const ContactForm = () => {
-  const [state, handleSubmit] = useForm('xpzoeaqg', {
+  const [state, handleSubmit] = useForm(AppConstants.formspreeId, {
     data: {
       _subject: 'Brian Odong Inquiry',
     }
@@ -24,13 +25,13 @@ const ContactForm = () => {
   }, [state.succeeded])
 
   return (
-    <div className="flex justify-center">
+    <div className="flex justify-center font-lato">
       <form id="form" onSubmit={handleSubmit} className="w-full max-w-lg">
         <fieldset>
           <div className="flex flex-wrap -mx-3 mb-6">
             <div className="w-full px-3">
               <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2">
-                Full Name
+                Name
               </label>
               <input id="name" type="text" name="name" className="appearance-none block w-full bg-gray-300 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" required />
               <ValidationError field="name" errors={state.errors} />
@@ -57,7 +58,7 @@ const ContactForm = () => {
           <div className="md:flex md:items-center">
             <div className="md:w-1/3">
               <button type="submit" disabled={state.submitting || state.succeeded} className="shadow bg-blue-400 hover:bg-blue-500 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded disabled:opacity-25 ">
-                Send
+                Send Inquiry
               </button>
             </div>
           </div>

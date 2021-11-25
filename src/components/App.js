@@ -2,7 +2,7 @@ import { AppRouter } from 'components/router/AppRouter';
 
 function App() {
   return (
-    <div className="App">
+    <div className="App-brianodong bg-tanalt">
       <AppRouter />
     </div>
   );
