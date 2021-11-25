@@ -2,7 +2,7 @@ const ProjectCard = ({ data }) => (
   <div className="w-full mb-4">
     <div className="bg-gray-100 rounded-lg shadow-lg relative">
       <a href={data?.url} target="_blank" rel="noreferrer">
-        <img className="p-2 h-48 w-full object-contain transition duration-150 ease-in-out transform hover:-translate-y-1 hover:scale-110" src={data?.img} alt="Project" />
+        <img className="p-2 h-48 w-full object-contain md:transition md:duration-150 md:ease-in-out md:transform md:hover:-translate-y-1 md:hover:scale-110" src={data?.img} alt="Project" />
       </a>
       <div className="p-4 h-auto md:h-48 lg:h-56">
         <div className="flex justify-between items-baseline">

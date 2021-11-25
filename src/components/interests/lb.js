@@ -16,7 +16,9 @@ function getPublishedDate(element) {
 }
 
 function getWatchedDate(element) {
-  return +new Date(element.find("letterboxd\\:watchedDate").text());
+  let date = element.find("letterboxd\\:watchedDate").text();
+  let d = date.split('-');
+  return d[1] + '/' + d[2] + '/' + d[0];
 }
 
 function getUri(element) {

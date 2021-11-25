@@ -9,7 +9,7 @@ const Interests = () => {
       <div className="mt-12">
         <Heading title="Interests" />
         <h3 className="flex justify-center font-lato font-semibold text-gray-700 mb-2">{AppConstants.interests}</h3>
-        <div className="flex flex-col md:flex-row justify-center space-x-4 space-y-4">
+        <div className="flex flex-col md:flex-row justify-center space-x-4 space-y-10 md:space-y-4">
           <Letterboxd />
           <Spotify />
         </div>

@@ -60,9 +60,9 @@ const Letterboxd = () => {
         {currentEntry ? <LbEntry entry={currentEntry} /> : <p className="font-lato font-semibold text-gray-700">{error ? error : 'Loading...'}</p>}
         {!error &&
           <div className="flex justify-center space-x-4 mt-3 text-gray-700 ">
-            <MdArrowBackIosNew onClick={handleBack} className="cursor-pointer mt-1" />
+            <MdArrowBackIosNew onClick={handleBack} className="cursor-pointer transform scale-200 mt-1" />
             <span className="font-lato font-semibold">{currentIndex + 1} / {entries.length}</span>
-            <MdArrowForwardIos onClick={handleForward} className="cursor-pointer mt-1" />
+            <MdArrowForwardIos onClick={handleForward} className="cursor-pointer transform scale-200 mt-1" />
           </div>}
       </div>
     </div>
