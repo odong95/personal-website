@@ -4,6 +4,7 @@ export const AppConstants = {
   twitterUrl: "https://twitter.com/skydxnce",
   githubUrl: "https://github.com/odong95",
   spotifyPlaylistUrl: 'https://open.spotify.com/playlist/6gcfUnJWZCb3LN0ezLUObI?si=438cf028d2074bd0',
+  spotifyEmbeddedUrl: 'https://open.spotify.com/embed/playlist/6gcfUnJWZCb3LN0ezLUObI?utm_source=generator',
   corsUrl: 'https://cors-anywhere-bodong.herokuapp.com/',
   aboutPic: "/assets/img/about.png",
   letterboxdLogo: 'assets/img/logos/lb.webp',
