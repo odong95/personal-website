@@ -28,7 +28,7 @@ const Letterboxd = () => {
           data = data.slice(0, 50);
           setEntries(data);
           if (!cachedData) {
-            lscache.set('lbData', data, 60);
+            lscache.set('lbData', data, 600);
           }
         }
       } catch (e) {
