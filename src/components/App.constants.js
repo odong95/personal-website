@@ -3,8 +3,20 @@ export const AppConstants = {
   letterboxdUrl: "https://letterboxd.com/lately",
   twitterUrl: "https://twitter.com/skydxnce",
   githubUrl: "https://github.com/odong95",
-  spotifyPlaylistUrl: 'https://open.spotify.com/playlist/6gcfUnJWZCb3LN0ezLUObI?si=438cf028d2074bd0',
-  spotifyEmbeddedUrl: 'https://open.spotify.com/embed/playlist/6gcfUnJWZCb3LN0ezLUObI?utm_source=generator',
+  spotifyPlaylists:[
+    {
+      url : 'https://open.spotify.com/playlist/6gcfUnJWZCb3LN0ezLUObI?si=438cf028d2074bd0',
+      embedded: 'https://open.spotify.com/embed/playlist/6gcfUnJWZCb3LN0ezLUObI?utm_source=generator'
+    },
+    {
+      url : 'https://open.spotify.com/playlist/59JUZDLUYaxbtEKMcJzZGY?si=c92e4f6300d54a5c',
+      embedded: 'https://open.spotify.com/embed/playlist/59JUZDLUYaxbtEKMcJzZGY?utm_source=generator'
+    },
+    {
+      url : 'https://open.spotify.com/playlist/3ZcAJLSa7T9QpqCgIG2MAV?si=25af4e06f39849dd',
+      embedded: 'https://open.spotify.com/embed/playlist/3ZcAJLSa7T9QpqCgIG2MAV?utm_source=generator'
+    },
+  ],
   corsUrl: 'https://cors-anywhere-bodong.herokuapp.com/',
   aboutPic: "/assets/img/about.png",
   letterboxdLogo: 'assets/img/logos/lb.webp',
