@@ -1,7 +1,7 @@
 import { IoMdStar, IoMdStarOutline, IoMdStarHalf } from 'react-icons/io'
 
 const LbEntry = ({ entry }) => {
-  
+
   const StarRatings = () => {
     let rating = Math.floor(entry?.rating?.score) || 0;
     let hasHalf = isNaN(entry.rating.score) ? false : entry?.rating?.score % 1 != 0;
