@@ -17,17 +17,18 @@ export const AppConstants = {
       embedded: 'https://open.spotify.com/embed/playlist/3ZcAJLSa7T9QpqCgIG2MAV?utm_source=generator'
     },
   ],
-  corsUrl: 'https://cors-anywhere-bodong.herokuapp.com/',
+  corsUrl: 'https://brian-cors-anywhere.onrender.com/',
   aboutPic: "/assets/img/about.png",
   letterboxdLogo: 'assets/img/logos/lb.webp',
   spotifyLogo: 'assets/img/logos/spotify.webp',
   resume: "/brian_odong_resume.pdf",
+  resumePic: "/assets/img/resume.png",
   formspreeId: 'xpzoeaqg',
   lbUserName: 'lately',
   companies: [
     {
       name: 'Meta',
-      url: 'https://about.facebook.com/meta/',
+      url: 'https://meta.com/',
       logo: '/assets/img/logos/meta.webp'
     },
     {
@@ -49,9 +50,8 @@ export const AppConstants = {
       logo: '/assets/img/logos/cgc.webp'
     }
   ],
-  aboutMe: "Hi I'm Brian, a software engineer based in the Dallas-Fort Worth area. " +
+  aboutMe: "Hi I'm Brian, a software engineer at Meta and based in the Dallas-Fort Worth area. " +
     "I have passion for using cutting edge technology to create intuitive user experiences and deliver performant web app solutions. " +
     "Check out some of the stuff I'm working on!",
-  interests: "I'm a huge film nerd and love discovering new music. Here is what I've been watching/listening to lately!",
-  footer: '© 2022 Brian Odong'
+  interests: "I'm a huge film nerd and love discovering new music. Here is what I've been watching/listening to lately!"
 }
