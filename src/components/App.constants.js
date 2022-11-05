@@ -17,7 +17,7 @@ export const AppConstants = {
       embedded: 'https://open.spotify.com/embed/playlist/3ZcAJLSa7T9QpqCgIG2MAV?utm_source=generator'
     },
   ],
-  corsUrl: 'https://brian-cors-anywhere.onrender.com/',
+  corsUrl: 'https://proxy-5xbjih3eka-uc.a.run.app/',
   aboutPic: "/assets/img/about.png",
   letterboxdLogo: 'assets/img/logos/lb.webp',
   spotifyLogo: 'assets/img/logos/spotify.webp',

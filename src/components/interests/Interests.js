@@ -8,7 +8,7 @@ const Interests = () => {
     <main className="container mx-auto px-8 py-4">
       <div className="mt-12">
         <Heading title="Interests" />
-        <h3 className="flex justify-center font-lato font-semibold text-gray-700 mb-2">{AppConstants.interests}</h3>
+        <h3 className="slide-ltr relative delay-500 bounce sliding-ltr flex justify-center font-lato font-semibold text-gray-700 mb-2">{AppConstants.interests}</h3>
         <div className="flex flex-col md:flex-row justify-center space-x-4 space-y-10 md:space-y-4">
           <Letterboxd />
           <Spotify />
