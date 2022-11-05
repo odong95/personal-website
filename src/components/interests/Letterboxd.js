@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { LbEntry } from './LbEntry';
 import { LogoLink } from 'components/common/logo-link/LogoLink';
+import { Spinner } from 'components/common/spinner/Spinner';
 import { MdArrowBackIosNew, MdArrowForwardIos } from 'react-icons/md'
 import { AppConstants } from "components/App.constants";
 import { letterboxd as lb } from "./lb";
@@ -54,10 +55,10 @@ const Letterboxd = () => {
   }
 
   return (
-    <div className="md:mt-3 noselect">
+    <div className="slide-rtl relative delay-500 bounce sliding-rtl md:mt-3 noselect">
       <LogoLink url={AppConstants.letterboxdUrl} src={AppConstants.letterboxdLogo} text="Letterboxd Film Diary" alt="Letterboxd" />
       <div className="flex flex-col justify-center">
-        {currentEntry ? <LbEntry entry={currentEntry} /> : <p className="font-lato font-semibold text-gray-700">{error ? error : 'Loading...'}</p>}
+        {currentEntry ? <LbEntry entry={currentEntry} /> : <p className="font-lato font-semibold text-gray-700">{error ? error : <Spinner />}</p>}
         {!error &&
           <div className="flex justify-center space-x-4 mt-3 text-gray-700 ">
             <MdArrowBackIosNew onClick={handleBack} className="cursor-pointer transform scale-200 mt-1" />

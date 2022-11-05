@@ -1,4 +1,3 @@
-import React from 'react'
 import { Link } from "react-router-dom";
 import { AppConstants } from 'components/App.constants';
 import { MdOutlineEmail } from 'react-icons/md'
