@@ -20,7 +20,7 @@ const Home = () => (
         </Link>
         <WorkHistory />
       </section>
-      <div className="slide-rtl relative delay-350 bounce sliding-rtl flex justify-center mb-16 sm:mb-0 mt-8 sm:mt-0 sm:w-3/5 sm:pl-12">
+      <div className="flex justify-center mb-16 sm:mb-0 mt-8 sm:mt-0 sm:w-3/5 sm:pl-12">
         <img src={AppConstants.aboutPic} alt="Brian Odong" />
       </div>
     </div>
