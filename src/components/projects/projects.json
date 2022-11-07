@@ -36,7 +36,8 @@
       "React",
       "JavaScript",
       "TailwindCSS",
-      "Vercel"
+      "Vercel",
+      "Firebase"
     ],
     "repository": "https://github.com/odong95/personal-website",
     "repoTool": "GitHub"

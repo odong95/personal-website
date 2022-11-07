@@ -14,11 +14,11 @@ const Spotify = () => {
   }, []);
 
   return (
-    <div class="slide-btt relative delay-500 bounce sliding-btt">
+    <>
       <LogoLink url={playlistUrl} src={AppConstants.spotifyLogo} text="Spotify Playlist" alt="Spotify" />
       <iframe src={embeddedUrl} width="100%"
         height="380" frameBorder="0" allowFullScreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" />
-    </div>
+    </>
   )
 }
 

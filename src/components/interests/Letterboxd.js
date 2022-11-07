@@ -55,7 +55,7 @@ const Letterboxd = () => {
   }
 
   return (
-    <div className="slide-rtl relative delay-500 bounce sliding-rtl md:mt-3 noselect">
+    <div className="md:mt-3 noselect">
       <LogoLink url={AppConstants.letterboxdUrl} src={AppConstants.letterboxdLogo} text="Letterboxd Film Diary" alt="Letterboxd" />
       <div className="flex flex-col justify-center">
         {currentEntry ? <LbEntry entry={currentEntry} /> : <p className="font-lato font-semibold text-gray-700">{error ? error : <Spinner />}</p>}
