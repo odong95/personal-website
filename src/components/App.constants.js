@@ -3,17 +3,17 @@ export const AppConstants = {
   letterboxdUrl: "https://letterboxd.com/lately",
   twitterUrl: "https://twitter.com/skydxnce",
   githubUrl: "https://github.com/odong95",
-  spotifyPlaylists:[
+  spotifyPlaylists: [
     {
-      url : 'https://open.spotify.com/playlist/6gcfUnJWZCb3LN0ezLUObI?si=438cf028d2074bd0',
+      url: 'https://open.spotify.com/playlist/6gcfUnJWZCb3LN0ezLUObI?si=438cf028d2074bd0',
       embedded: 'https://open.spotify.com/embed/playlist/6gcfUnJWZCb3LN0ezLUObI?utm_source=generator'
     },
     {
-      url : 'https://open.spotify.com/playlist/59JUZDLUYaxbtEKMcJzZGY?si=c92e4f6300d54a5c',
+      url: 'https://open.spotify.com/playlist/59JUZDLUYaxbtEKMcJzZGY?si=c92e4f6300d54a5c',
       embedded: 'https://open.spotify.com/embed/playlist/59JUZDLUYaxbtEKMcJzZGY?utm_source=generator'
     },
     {
-      url : 'https://open.spotify.com/playlist/3ZcAJLSa7T9QpqCgIG2MAV?si=25af4e06f39849dd',
+      url: 'https://open.spotify.com/playlist/3ZcAJLSa7T9QpqCgIG2MAV?si=25af4e06f39849dd',
       embedded: 'https://open.spotify.com/embed/playlist/3ZcAJLSa7T9QpqCgIG2MAV?utm_source=generator'
     },
   ],
@@ -37,9 +37,9 @@ export const AppConstants = {
       logo: '/assets/img/logos/ti.webp'
     },
     {
-      name: 'Dairy.com',
-      url: 'https://dairy.com',
-      logo: '/assets/img/logos/dairy.webp'
+      name: 'Ever.Ag',
+      url: 'https://www.ever.ag/',
+      logo: '/assets/img/logos/everag.webp'
     }, {
       name: 'L3Harris',
       url: 'https://l3harris.com',

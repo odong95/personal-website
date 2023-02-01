@@ -1,6 +1,6 @@
 # brianodong.com
 
-My personal portfolio site built with React and TailwindCSS. Deployed with [Vercel](https://vercel.com).
+My personal portfolio site built with React, TailwindCSS, and Vite. Deployed with [Vercel](https://vercel.com).
 
 ## Scripts
 
