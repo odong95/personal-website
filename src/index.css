@@ -51,6 +51,7 @@
 .delay-500 {
   animation-delay: 0.5s;
 }
+
 .delay-1000 {
   animation-delay: 1s;
 }
@@ -102,7 +103,7 @@
 }
 
 .slide-rtl {
-  clip-path: polygon(0% 100%, 0% 0%, 0% 0%, 0% 100%);
+  animation: slide-rtl 700ms ease-in-out forwards;
 }
 
 
@@ -142,14 +143,11 @@
   }
 }
 
-@keyframes sliding-rtl {
-  0% {
+@keyframes slide-rtl {
+  from {
     transform: translateX(100%);
-    clip-path: polygon(0% 100%, 0% 0%, 0% 0%, 0% 100%);
   }
-
-  100% {
-    transform: translateX(0%);
-    clip-path: polygon(0% 100%, 0% 0%, 100% 0%, 100% 100%);
+  to {
+    transform: translateX(0);
   }
 }

@@ -1,6 +1,6 @@
+/** @type {import('tailwindcss').Config} */
 module.exports = {
-  purge: ['./src/**/*.{js,jsx,ts,tsx}', './public/index.html'],
-  darkMode: 'class', // or 'media' or 'class'
+  content: ['./src/**/*.{js,jsx,ts,tsx}', './index.html'],
   theme: {
     extend: {
       colors: {
@@ -41,11 +41,6 @@ module.exports = {
       '175': '1.75',
       '200': '2'
     }
-  },
-  variants: {
-    extend: {
-      opacity: ['disabled'],
-    },
   },
   plugins: [],
 }

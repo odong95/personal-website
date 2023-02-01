@@ -11,10 +11,10 @@ const Home = () => (
         <h2 className="slide-btt relative delay-250 bounce sliding-btt uppercase text-4xl text-red-400 text-secondary tracking-widest mb-6">Odong</h2>
         <h3 className="slide-ltr relative delay-500 bounce sliding-ltr text-gray-600 leading-relaxed mb-6 font-lato font-semibold">{AppConstants.aboutMe}</h3>
         <Link to="/projects">
-          <button className="slide-rtl relative delay-500 bounce sliding-rtl transition duration-150 ease-in-out transform hover:-translate-y-1 hover:scale-110 bg-green-600 hover:bg-red-400 py-3 px-6 uppercase text-lg font-bold font-lato text-gray-100 
+          <button className="slide-rtl relative bounce transition duration-150 ease-in-out hover:-translate-y-1 hover:scale-110 bg-emerald-600 hover:bg-red-400 py-3 px-6 uppercase text-lg font-bold font-lato text-gray-100 
           rounded-full mb-6">
             <div className="flex flex-row">
-              Projects <MdPlayArrow className="mt-1 mx-0.5 transform scale-150" />
+              Projects <MdPlayArrow className="mt-1 mx-0.5 scale-150" />
             </div>
           </button>
         </Link>
