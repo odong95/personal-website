@@ -34,7 +34,6 @@
     "description": "My personal portfolio website. (Built 2021)",
     "technologies": [
       "React",
-      "JavaScript",
       "TailwindCSS",
       "Vercel",
       "Vite",

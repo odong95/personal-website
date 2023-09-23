@@ -16,7 +16,7 @@ const Spotify = () => {
   return (
     <div>
       <LogoLink url={playlistUrl} src={AppConstants.spotifyLogo} text="Spotify Playlist" alt="Spotify" />
-      <iframe src={embeddedUrl} width="100%"
+      <iframe src={embeddedUrl} width="100%" loading="lazy" title="Spotify"
         height="380" frameBorder="0" allowFullScreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" />
     </div>
   )

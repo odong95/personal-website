@@ -9,9 +9,9 @@ const Home = () => (
       <section className="sm:w-2/5 sm:items-start sm:text-left">
         <h1 className="slide-ttb relative delay-250 bounce sliding-ttb uppercase text-6xl text-gray-700 tracking-widest mb-2">Brian</h1>
         <h2 className="slide-btt relative delay-250 bounce sliding-btt uppercase text-4xl text-red-400 text-secondary tracking-widest mb-6">Odong</h2>
-        <h3 className="slide-ltr relative delay-500 bounce sliding-ltr text-gray-600 leading-relaxed mb-6 font-lato font-semibold">{AppConstants.aboutMe}</h3>
+        <h3 className="relative delay-500 bounce text-gray-600 leading-relaxed mb-6 font-lato font-semibold">{AppConstants.aboutMe}</h3>
         <Link to="/projects">
-          <button className="slide-rtl relative bounce transition duration-150 ease-in-out hover:-translate-y-1 hover:scale-110 bg-emerald-600 hover:bg-red-400 py-3 px-6 uppercase text-lg font-bold font-lato text-gray-100 
+          <button className="relative bounce transition duration-150 ease-in-out hover:-translate-y-1 hover:scale-110 bg-emerald-600 hover:bg-red-400 py-3 px-6 uppercase text-lg font-bold font-lato text-gray-100 
           rounded-full mb-6">
             <div className="flex flex-row">
               Projects <MdPlayArrow className="mt-1 mx-0.5 scale-150" />
