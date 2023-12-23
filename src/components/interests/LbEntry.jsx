@@ -1,4 +1,5 @@
 import { IoMdStar, IoMdStarOutline, IoMdStarHalf } from 'react-icons/io'
+import { LuRefreshCw } from "react-icons/lu";
 
 const LbEntry = ({ entry }) => {
 
@@ -25,6 +26,7 @@ const LbEntry = ({ entry }) => {
       <div className="w-2/3 bg-gray-50 flex flex-col space-y-2 p-3">
         <div className="flex justify-between item-center">
           <p className="text-gray-500 font-medium block">{entry?.date?.watched}</p>
+          {entry?.isRewatch && <LuRefreshCw className="text-red-400 mt-1" />}
           <div className="flex items-center md:hidden">
             <IoMdStar className="text-yellow-500" />
             <span className="text-gray-600 font-bold text-sm ml-1">
