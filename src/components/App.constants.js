@@ -6,15 +6,18 @@ export const AppConstants = {
   spotifyPlaylists: [
     {
       url: 'https://open.spotify.com/playlist/6gcfUnJWZCb3LN0ezLUObI?si=438cf028d2074bd0',
-      embedded: 'https://open.spotify.com/embed/playlist/6gcfUnJWZCb3LN0ezLUObI?utm_source=generator'
+      embedded: 'https://open.spotify.com/embed/playlist/6gcfUnJWZCb3LN0ezLUObI?utm_source=generator',
+      name: 'housin'
     },
     {
       url: 'https://open.spotify.com/playlist/59JUZDLUYaxbtEKMcJzZGY?si=c92e4f6300d54a5c',
-      embedded: 'https://open.spotify.com/embed/playlist/59JUZDLUYaxbtEKMcJzZGY?utm_source=generator'
+      embedded: 'https://open.spotify.com/embed/playlist/59JUZDLUYaxbtEKMcJzZGY?utm_source=generator',
+      name: 'jentedes des vox'
     },
     {
-      url: 'https://open.spotify.com/playlist/3ZcAJLSa7T9QpqCgIG2MAV?si=25af4e06f39849dd',
-      embedded: 'https://open.spotify.com/embed/playlist/3ZcAJLSa7T9QpqCgIG2MAV?utm_source=generator'
+      url: 'https://open.spotify.com/playlist/7oY7a4h2vGl5dYRqnW4VOv?si=32e588a034774c19',
+      embedded: 'https://open.spotify.com/embed/playlist/7oY7a4h2vGl5dYRqnW4VOv?utm_source=generator',
+      name: 'vulnerable'
     },
   ],
   corsUrl: 'https://proxy-5xbjih3eka-uc.a.run.app/',
@@ -46,7 +49,7 @@ export const AppConstants = {
       logo: '/assets/img/logos/l3.webp'
     }, {
       name: 'CancerGene Connect',
-      url: 'https://www.invitae.com/en/press/invitae-acquires-cancergene-connect/',
+      url: 'https://www.invitae.com/',
       logo: '/assets/img/logos/cgc.webp'
     }
   ],

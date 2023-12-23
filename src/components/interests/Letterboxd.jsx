@@ -13,12 +13,10 @@ const Letterboxd = ({ lbData, error }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {
-    if (lbData) {
-      if (lbData.length > 0) {
-        setCurrentEntry(lbData[currentIndex]);
-        lbData = lbData.slice(0, 50);
-        setEntries(lbData);
-      }
+    if (lbData?.length > 0) {
+      setCurrentEntry(lbData[currentIndex]);
+      lbData = lbData.slice(0, 50);
+      setEntries(lbData);
     }
   }, [lbData]);
 
@@ -60,10 +58,8 @@ const useLetterboxdFetch = () => {
     const fetchData = async () => {
       try {
         let cachedData = lscache.get('lbData');
-        let data;
-        if (cachedData) {
-          data = cachedData;
-        } else {
+        let data = cachedData;
+        if (!cachedData) {
           data = await lb(AppConstants.lbUserName);
           lscache.set('lbData', data, 600);
         }
